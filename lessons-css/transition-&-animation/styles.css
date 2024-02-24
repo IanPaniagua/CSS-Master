@@ -1,0 +1,64 @@
+.btn {
+    display: block;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    border: 5px solid rgb(2, 80, 2);
+    /* transition: all 500ms; */
+    transition: border 3s, background 3s, border-radius 1s;
+}
+.btn:hover{
+    border-radius: 15px;
+    background: orange;
+    border: 5px;
+}
+.box {
+    width: 250px;
+    height: 250px;
+    background: blue;
+    color: white;
+    border: 5px solid black;
+    text-align: center;
+    line-height: 200px;
+    margin-top: 10px;
+    font-size: 16px;
+    animation-name: displacement;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* transition purposes */
+
+@keyframes displacement {
+    /* from{
+        margin-left: 0px;
+    }to{
+        margin-left: 1200px;
+    } */
+    0%{
+        font-size: 1px;
+        margin-left: 0px;
+        transform: rotate(0deg);
+    }50%{
+        margin-left: 1200px;
+        transform: rotate(360deg);
+        border-radius: 999px;
+        font-size: 24px;
+
+    }75%{
+        background: red;
+    }
+    77%{
+        border-color: green;
+    }
+   
+   
+    100%{
+        margin-left: 0px;
+        transform: rotate(0deg);
+        font-size: 1px;
+    }
+}
