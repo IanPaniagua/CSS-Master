@@ -67,6 +67,7 @@ header {
 }
 
 .main-content .box {
+    position: flex;
     display: block;
     width: 40%;
     height: 250px;
@@ -105,5 +106,30 @@ footer {
     text-align: center;
     color: #444;
     border-top: 1px solid #ccc;
+}
+
+.free {
+    position: absolute;
+    top: 441px;
+    left: 49%;
+    right: inherit;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+.free2 {
+    position: absolute;
+    top: 405px;
+    left: 50%;
+    right: inherit;
+    border: 1px solid black;
+    background-color: green;
+    color: white;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
 }
 
