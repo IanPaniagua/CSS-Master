@@ -1,0 +1,42 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li:first-child {
+    color: red;
+}
+ul li:last-child {
+    color: blue;
+}ul li:nth-child(2) {
+    color: orange;
+}
+ul li:nth-child(3) {
+    color: green;
+}
+/* before visit the ancher */
+.go:link{
+color: red;
+}
+/* already visited */
+.go:visited{
+color: blue;
+}
+
+.go:hover{
+    color: purple;
+}
+.go:active{
+    color: green;
+    font-size: 24px;
+}
+.go:focus{
+    color: gray;
+    font-size: 24px;
+}
+input[type="text"]{
+    margin-top: 20px;
+    padding: 10px;
+}
+input[type="text"]:focus{
+   border: 3px dashed red;
+}
+

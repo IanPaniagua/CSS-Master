@@ -37,7 +37,9 @@ header {
     float: left;
     border-right: 1px solid #ccc;
 }
-
+ul li:first-child{
+    color: purple ;
+}
 .menu ul li a{
     display: block;
     padding: 15px;
