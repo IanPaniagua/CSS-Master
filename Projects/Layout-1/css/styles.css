@@ -9,6 +9,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "fajala";
+    src: url("fonts/FjallaOne-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* MAIN STYLE */
 
 * {
@@ -38,6 +44,9 @@ a:hover {
 
 .blue{
     color: #0c73f2 !important;
+}
+.orange {
+    color: #d69d2a !important;
 }
 /* FORM */
 input[type="text"],
@@ -211,7 +220,7 @@ button:active {
 
 /* CONTENT */
 .content {
-    border: 1px solid rebeccapurple;
+  
     width: 1250px;
     min-height: 1100px;
     margin: 0px auto;
@@ -220,7 +229,7 @@ button:active {
 
 /* SIDEBAR */
 .sidebar, .frase {
-    clear: both;
+   
     border: 1px solid #ccc;
     width: 200px;
     float: left;
@@ -300,4 +309,52 @@ button:active {
 .sidebar label{
     margin: 0 auto;
     text-align: center;
+}
+/* SECTIONS */
+
+#sections{
+    float: right;
+    width: 75%;
+    font-family: sans-serif, Arial, Helvetica;
+    margin-right: 20px;
+}
+#sections .title{
+    font-size: 24px;
+    margin-top: -20px;
+    margin-bottom: 5px;
+    font-family: "fajala";
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#sections section {
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+}
+#sections .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#sections .date {
+    color: gray;
+    font-size: 14px;
+}
+#sections .sticker1,
+#sections .sticker2{
+    position: absolute;
+    margin-top: -38px;
+    z-index: 0;
+}
+#sections .sticker2{
+    margin-left: 860px;
 }
