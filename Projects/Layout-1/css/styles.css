@@ -15,6 +15,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "icons";
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular")format('svg'),
+        url("fonts/websymbols-regular-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot#iefix") format("embedded-opentype"),
+        url("fonts/websymbols-regular-webfont.woff") format("woff"),
+        url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 /* MAIN STYLE */
 
 * {
@@ -47,6 +57,16 @@ a:hover {
 }
 .orange {
     color: #d69d2a !important;
+}
+.icon {
+    font-family: "icons";
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+.clearfix {
+    float: none;
+    clear: both;
 }
 /* FORM */
 input[type="text"],
@@ -220,7 +240,7 @@ button:active {
 
 /* CONTENT */
 .content {
-  
+    font-family: sans-serif,Arial, Helvetica;
     width: 1250px;
     min-height: 1100px;
     margin: 0px auto;
@@ -357,4 +377,25 @@ button:active {
 }
 #sections .sticker2{
     margin-left: 860px;
+}
+/* FOOTER */
+
+#history {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#footer {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    box-shadow: 0px 0px 2px gray;
 }
