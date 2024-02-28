@@ -102,9 +102,7 @@ body{
     margin-top: 5px;
     margin-right: 65px;
     transition: all 300ms;
-
 }
-
 #menu {
     float: right;
     margin-right: 15%;
@@ -128,9 +126,8 @@ body{
    color: #37bcf9;
    transform: scale(1.2, 1.2);
 }
-
 /* nav > ul >li {
     display: inline-block;
-
     margin: auto 20px;
 } */
+
