@@ -547,15 +547,16 @@ aside h3:first-child {
     font-family: "TrebuchetMS";
  }
  #articles  .data{
+    width: auto;
     float: right;
     height: 34px;
     line-height: 42px !important;
-    margin: -10px;
-    padding: 5px;
+    margin: -11px;
+    /* padding: 5px; */
     background: #393d3f;
     color: white;
     border-bottom-left-radius: 5px;
-    font-size: 13px;
+    font-size: 12px;
  }
 
  #articles .data span{
@@ -580,6 +581,9 @@ aside h3:first-child {
     color: #006cb4;
     font-size: 15px;
     text-decoration: none;
+}
+#articles p{
+    font-size: 1em;
 }
 #blog {
     padding: 0px;
