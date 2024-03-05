@@ -1,14 +1,32 @@
 $fuente-tipica: sans-serif, Helvetica, Arial;
-$color-fondo: #ccc;
-$color-letra: red;
+$color-fondo: red;
+$color-letra: blue;
+
 $color-secundario: rgb(170, 102, 102);
+
+//Mixins / Funciones
+@mixin createBorder(){
+    border:5px solid red;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
+@mixin createBorderWithVariable($color, $sizeRadius){
+    border:5px solid $color;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+}
 
 body{
     background-color: $color-fondo;
+
 }
 h1{
     color: $color-letra;
+    @include createBorder();
+  
 }
 p{
-    color: $color-secundario;
+    @include createBorderWithVariable(green,15px );
 }
+
+
