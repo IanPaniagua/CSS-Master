@@ -6,7 +6,8 @@ body{
     display: grid;
     grid-gap: 10px;
     /* definicion columnas */
-    grid-template-columns: 50% calc(50% - 10px);
+    /* grid-template-columns: 1fr 1fr 1fr; or */
+    grid-template-columns: repeat(4, 1fr);
     border: 3px solid orangered;
     padding: 10px ;
     width: 60%;
