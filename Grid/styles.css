@@ -8,6 +8,7 @@ body{
     /* definicion columnas */
     /* grid-template-columns: 1fr 1fr 1fr; or */
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr) 3fr;
     border: 3px solid orangered;
     padding: 10px ;
     width: 60%;
