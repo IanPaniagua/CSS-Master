@@ -21,6 +21,9 @@ body{
 }
 
 #cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column: 1/ 6;
     background: red;
     color: white;
@@ -29,6 +32,7 @@ body{
     grid-column:  1/ 6;
     background: lightblue;
     color: black;
+    line-height: 70px;
 }
 #menu ul{
     display: grid;
