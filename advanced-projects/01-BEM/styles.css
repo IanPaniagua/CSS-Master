@@ -1,0 +1,42 @@
+/* BEM = Block Element Modificator 
+
+ - We use always Class, not Id
+    Class to Styles, Id to functionality(js)
+ - Do not use Etiquetas
+ - Each key element is a selector
+    Example Classes:
+    .block
+    .block__element
+    .block__element--modificator
+*/
+
+/* block */
+.cards{
+   width: 400px;
+   margin: 10px auto;
+   padding: 10px;
+   border: 1px solid gray;
+   box-shadow: 0px 0px 20px gray;
+   border-radius: 5px;
+}
+
+/* block__element */
+.cards__card{
+   font-family: 'Courier New', Courier, monospace;
+   padding: 10px;
+   margin: 5px;
+   background-color: lightblue;
+}
+
+.card__link{
+   padding: 10px;
+   background: green;
+   color: white;
+   text-decoration: none;
+
+}
+
+/* block__element--modifier */
+.card__link--red{
+   background: red;
+}
