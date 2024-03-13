@@ -22,6 +22,15 @@ body{
     font-size: 1.5rem;
     background-color: var(--color-background);
     color: var(--color-text);
+    /* no scroll */
+    overflow: hidden;
+}
+/* backgroundimage */
+body{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -20px -120px;
 }
 
 h1,h2,h3,h4,h5.h6 {
@@ -46,5 +55,8 @@ h1,h2,h3,h4,h5.h6 {
     /* shadow behind layout */
     border-radius: 4rem;
     box-shadow: 0 0 100px -5px rgba(0,0,0, 0.25);
-    
+
 }
+
+
+
