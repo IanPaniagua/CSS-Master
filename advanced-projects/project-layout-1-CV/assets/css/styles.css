@@ -261,3 +261,15 @@ h1,h2,h3,h4,h5.h6 {
     opacity: 1;
     right: 100%;
 }
+
+/* SOBRE MI */
+
+.content__about{
+    height: 100%;
+    min-height: 100%;
+    overflow: auto;
+    display: block;
+    padding: 6rem;
+    padding-right: 3rem;
+}
+
