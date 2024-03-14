@@ -169,9 +169,6 @@ h1,h2,h3,h4,h5.h6 {
     font-size: 1.2rem;
 }
 
-
-
-
 .layout__menu{
     display: none !important;
 }
@@ -179,5 +176,29 @@ h1,h2,h3,h4,h5.h6 {
 /* MAIN CONTENT */
 .layout__content{
     grid-area: content;
+    height: 100%;
+    min-height: 100%;
+    background-color: var(--color-secondary);
+    border-radius: 0 10rem 10rem 0;
+}
 
+.content__page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-principal);
+    min-height: 100%;
+    border-radius: 3.2rem;
+}
+.page__name{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+
+}
+.page__job{
+    font-size: 2.1rem;
+    font-weight: lighter;
+    color: var(--color-subtitle);
 }
