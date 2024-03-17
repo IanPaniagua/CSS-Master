@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/scroll.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/loader.css">
+
+    <script src="assets/js/map.js" defer></script>
     <title>Profil Ian Paniagua</title>
 </head>
 
@@ -125,7 +128,7 @@
                         <h2 class="contact__subtitle">635895503</h2>
                     </div>
                     <div class="contact__data">
-                        <i class=" contact__icon fa-solid fa-envelop"></i>
+                        <i class=" contact__icon fa-solid fa-envelope"></i>
                         <h2 class="contact__subtitle">victor@gmail.com</h2>
                     </div>
                     <div class="contact__data">
@@ -135,38 +138,39 @@
                 </section>
 
                 <section class="contact__formbox">
-                    <div class="contact__map">
-                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2368.3942132864163!2d9.982911212523442!3d53.58642737224466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b188c987b2738b%3A0xd496e2ede493d20f!2sBeim%20Andreasbrunnen%206%2C%2020249%20Hamburg!5e0!3m2!1ses!2sde!4v1710680895507!5m2!1ses!2sde" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact__map" id="load-iframe-map">
+                        <span class="loader"></span>
                     </div>
                     <header class="contact__form-header">
-                        <h3 class="contact__subtitle">Como puedo <span class="subtitle__color">ayudarte</span> ?</h3>
+                        <h3 class="form-header__title">Como puedo <span class="subtitle__color">ayudarte</span> ?</h3>
                     </header>
 
                     <form action="" class="contact__form">
                         <div class="form__container">
                         <section class="form__left">
                                 <div class="form__group">
-                                    <input type="text" name="name"  class="form__imput" placeholder="name">
-                                    <label for="name" class="form__label">Name</label>
+                                    <input type="text" name="name"  class="form__input" placeholder="name">
+                                    <label for="name" class="form__label">name</label>
                                 </div>
                                 <div class="form__group">
-                                    <input type="email" name="email"  class="form__imput" placeholder="email">
-                                    <label for="email" class="form__label">Email</label>
+                                    <input type="email" name="email"  class="form__input" placeholder="email">
+                                    <label for="email" class="form__label">email</label>
                                 </div>
                                 <div class="form__group">
-                                    <input type="text" name="subject"  class="form__imput" placeholder="subject">
-                                    <label for="subject" class="form__label">Asunto</label>
+                                    <input type="text" name="subject"  class="form__input" placeholder="subject">
+                                    <label for="subject" class="form__label">subject</label>
                                 </div>
                             </section>
                             <section class="form__right">
-                                <div class="form__group">
-                                    <textarea name="message" class="form__input form__input--textarea" required></textarea>
-                                    <label for="message" class="form__label">Mensaje</label>
+                                <div class="form__group form__group--textarea">
+                                    <textarea name="message" class="form__input form__input--textarea" placeholder="message" required></textarea>
+                                    <label for="message" class="form__label">message</label>
                                 </div>
                             </section>
-
-                            <input type="submit" value="enviar mensaje" class="form__button">
                         </div>
+
+                        <input type="submit" value="enviar mensaje" class="form__button">
+
                     </form>
                 </section>
              </div>
